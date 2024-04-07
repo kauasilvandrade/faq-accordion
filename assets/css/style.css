@@ -1,0 +1,117 @@
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CORES */
+:root {
+    --branco: #ffffff;
+    --fundo: #f9f0ff;
+    --lightPink: #8c6991;
+    --grayishPurple: #8c69913e;
+    --darkPurple: #2f1533;
+    --hoverPurple: #dd00ff;
+}
+
+/* CORPO */
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: var(--fundo);
+}
+
+/* FUNDO DE CABEÇALHO */
+.fundoCabecalho {
+    background-image: url("../images/background-pattern-desktop.svg");
+    height: 320px;
+    position: absolute;
+    width: 100%;
+}
+
+.fundoCabecalho img {
+    width: 100%;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    background-color: white;
+    position: relative;
+    width: 740px;
+    margin: auto;
+    border-radius: 10px;
+    top: 8rem;
+    padding: 2rem;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3em;
+    color: var(--darkPurple);
+    display: flex;
+    gap: 1rem;
+}
+
+h1 img {}
+
+/* SEÇÃO FAQ */
+.secaoFaqs {}
+
+.secaoFaqs__listaPerguntasRespostas {
+    list-style: none;
+}
+
+.secaoFaqs__perguntas {
+    padding: 1rem 0;
+}
+
+.secaoFaqs__perguntas:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.secaoFaqs__tituloBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.secaoFaqs__tituloBtn:hover h3 {
+    color: var(--hoverPurple);
+}
+
+.secaoFaqs__tituloBtn h3 {
+    color: var(--darkPurple);
+    font-size: 1.3em;
+    transition: .3s;
+}
+
+.secaoFaqs__tituloBtn button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.secaoFaqs__tituloBtn button img {
+    width: 3.1em;
+}
+
+.secaFaqs__respostaPergunta {
+    color: var(--lightPink);
+    line-height: 1.5em;
+    /* height: 0; */
+    /* visibility: hidden; */
+    /* overflow-y: hidden; */
+    transition: .5s;
+    display: none;
+}
+
+.secaFaqs__respostaPergunta.ativado {
+    /* padding-block: 1.4rem;
+    visibility: visible;
+    height: 100%; */
+    display: block;
+}

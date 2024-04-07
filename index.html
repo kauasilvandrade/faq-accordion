@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -8,41 +8,95 @@
   
   <title>Frontend Mentor | FAQ accordion</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
 
-  FAQs
+  <!-- FUNDO DE CABEÇALHO -->
+  <header class="fundoCabecalho">
 
-  What is Frontend Mentor, and how will it help me?
+    
 
-  Frontend Mentor offers realistic coding challenges to help developers improve their 
-  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-  all levels and ideal for portfolio building.
+  </header> 
 
-  Is Frontend Mentor free?
+  <!-- CONTEÚDO -->
+  <main class="conteudo">
 
-  Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-  option providing access to a range of projects suitable for all skill levels.
+    <h1>
+      <img src="assets/images/icon-star.svg" alt="Ícone de Estrela">
+      FAQs
+    </h1>
 
-  Can I use Frontend Mentor projects in my portfolio?
+    <!-- SEÇÃO FAQ -->
+    <section class="secaoFaqs"> 
 
-  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-  way to showcase your skills to potential employers!
+      <!-- LISTA DE PERGUNTAS E RESPOSTAS -->
+      <ul class="secaoFaqs__listaPerguntasRespostas">
 
-  How can I get help if I'm stuck on a Frontend Mentor challenge?
-  
-  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-  channel where you can ask questions and seek support from other community members.
+        <li class="secaoFaqs__perguntas">
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <div class="secaoFaqs__tituloBtn">
+
+            <h3>What is Frontend Mentor, and how will it help me?</h3>
+
+            <button><img src="assets/images/icon-minus.svg" alt="Ímagem de ìcone Mais" class="btnImg"></button>
+
+          </div>
+
+          <p class="secaFaqs__respostaPergunta ativado">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p>
+
+        </li>
+
+        <li class="secaoFaqs__perguntas">
+
+          <div class="secaoFaqs__tituloBtn">
+
+            <h3>Is Frontend Mentor free?</h3>
+
+            <button><img src="assets/images/icon-plus.svg" alt="Ímagem de ìcone Mais" class="btnImg"></button>
+
+          </div>
+
+          <p class="secaFaqs__respostaPergunta">Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.</p>
+
+        </li>
+
+        <li class="secaoFaqs__perguntas">
+
+          <div class="secaoFaqs__tituloBtn">
+
+            <h3>Can I use Frontend Mentor projects in my portfolio?</h3>
+
+            <button><img src="assets/images/icon-plus.svg" alt="Ímagem de ìcone Mais" class="btnImg"></button>
+
+          </div>
+
+          <p class="secaFaqs__respostaPergunta">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!</p>
+
+        </li>
+
+        <li class="secaoFaqs__perguntas">
+
+          <div class="secaoFaqs__tituloBtn">
+
+            <h3>How can I get help if I'm stuck on a Frontend Mentor challenge?</h3>
+
+            <button><img src="assets/images/icon-plus.svg" alt="Ímagem de ìcone Mais" class="btnImg"></button>
+
+          </div>
+
+          <p class="secaFaqs__respostaPergunta">The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members </p>
+
+        </li>
+
+      </ul>
+
+    </section>
+
+  </main>
+
+  <script src="assets/js/script.js" defer></script>
+
 </body>
 </html>
