@@ -22,6 +22,7 @@
 body {
     font-family: "Work Sans", sans-serif;
     background-color: var(--fundo);
+    padding-inline: 2rem;
 }
 
 /* FUNDO DE CABEÇALHO */
@@ -30,6 +31,7 @@ body {
     height: 320px;
     position: absolute;
     width: 100%;
+    left: 0;
 }
 
 .fundoCabecalho img {
@@ -40,10 +42,10 @@ body {
 .conteudo {
     background-color: white;
     position: relative;
-    width: 740px;
+    max-width: 775px;
     margin: auto;
     border-radius: 10px;
-    top: 8rem;
+    top: 10rem;
     padding: 2rem;
 }
 
@@ -53,6 +55,7 @@ h1 {
     color: var(--darkPurple);
     display: flex;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 h1 img {}
@@ -102,16 +105,42 @@ h1 img {}
 .secaFaqs__respostaPergunta {
     color: var(--lightPink);
     line-height: 1.5em;
-    /* height: 0; */
-    /* visibility: hidden; */
-    /* overflow-y: hidden; */
-    transition: .5s;
+    max-width: 41rem;
     display: none;
 }
 
 .secaFaqs__respostaPergunta.ativado {
-    /* padding-block: 1.4rem;
-    visibility: visible;
-    height: 100%; */
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+
+    .fundoCabecalho {
+        background-image: url(../images/background-pattern-mobile.svg);
+        height: 232px;
+    }
+
+    .conteudo {
+        top: 5rem;
+    }
+    
+    h1 {
+        font-size: 2.3em;
+        font-weight: 800;
+    }
+
+    .secaoFaqs__tituloBtn h3 {
+        font-size: 1em;
+    }
+
+    .secaoFaqs__tituloBtn button img {
+        width: 2.5em;
+    }
+
+    .secaFaqs__respostaPergunta {
+        font-size: 0.8em;
+        padding-top: 1rem;
+    }
+
+
 }
